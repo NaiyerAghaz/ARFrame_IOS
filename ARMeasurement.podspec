@@ -39,8 +39,8 @@ ARMeasurement Framework is used to calculate the distance between the nodes, and
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+#spec.license      = "MIT (example)"
+  # spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,9 +53,9 @@ ARMeasurement Framework is used to calculate the distance between the nodes, and
   #  profile URL.
   #
 
-  spec.author             = { "Naiyer" => "naiyer@smartitventures.com" }
+  spec.author             = { "Naiyer" => "naiyer.aghaz@gmail.com" }
   # Or just: spec.author    = "Naiyer"
-  # spec.authors            = { "Naiyer" => "naiyer@smartitventures.com" }
+   spec.authors            = { "Naiyer" => "naiyer.aghaz@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/Naiyer"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -69,7 +69,8 @@ ARMeasurement Framework is used to calculate the distance between the nodes, and
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
+   spec.osx.deployment_target = "10.7"
+   spec.swift_version = "4.2"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
@@ -80,7 +81,7 @@ ARMeasurement Framework is used to calculate the distance between the nodes, and
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/ARMeasurement.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/NaiyerAghaz/ARFrame_IOS.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +92,7 @@ ARMeasurement Framework is used to calculate the distance between the nodes, and
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "ARMeasurement/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -117,7 +118,7 @@ ARMeasurement Framework is used to calculate the distance between the nodes, and
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
+   spec.framework  = "UIKit", "ARKit"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
