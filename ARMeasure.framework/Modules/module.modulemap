@@ -1,0 +1,11 @@
+framework module ARMeasure {
+  umbrella header "ARMeasure.h"
+
+  export *
+  module * { export * }
+}
+
+module ARMeasure.Swift {
+    header "ARMeasure-Swift.h"
+    requires objc
+}
